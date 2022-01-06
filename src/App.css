@@ -1,9 +1,49 @@
-.App {
+body {
+  margin: 0;
+  padding-top: 6%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #303041;
   text-align: center;
 }
 
+body::-webkit-scrollbar {
+  width: 10px
+} 
+
+body::-webkit-scrollbar-thumb {   
+background-color: #e9f1f4;   
+}
+
+.fadeIn {
+  animation: fadeIn 0.3s linear;
+}
+@keyframes fadeIn {
+  from{ opacity: 0;
+  }
+  to{ opacity: 1; 
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+/* 
+font-family: 'Raleway', sans-serif;
+font-family: 'Fredoka One', cursive;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Michroma', sans-serif;
+*/
+
+/* ⬇️⬇️⬇️ LOGO REACT ⬇️⬇️⬇️ */
+
 .App-logo {
-  height: 40vmin;
+  height: 40px;
   pointer-events: none;
 }
 
@@ -11,21 +51,6 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -36,3 +61,225 @@
     transform: rotate(360deg);
   }
 }
+
+/* ⬆️⬆️⬆️ LOGO REACT ⬆️⬆️⬆️ */
+
+/* ⬇️⬇️⬇️ HEADER ⬇️⬇️⬇️ */
+
+.header-background {
+  top: 0;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  position: fixed;
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(114, 114, 126, 0.2);
+  width: 100%;
+  height: 70px;
+  z-index: 1;
+}
+
+.header-my-name {
+  width: 40%;
+  font-family: 'Michroma', sans-serif;
+  font-size: 28px;
+  color: #F4FCFE;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+}
+
+.header-nav-link {
+  width: 150px;
+  font-family: 'Michroma', sans-serif;  color: #F4FCFE;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Fredoka One', cursive;
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header-nav-link:hover {
+  font-weight:bold;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(20deg, #25aae1,#40e495,#2bb673) 1;
+}
+
+/* ⬆️⬆️⬆️ HEADER ⬆️⬆️⬆️ */
+
+/* ⬇️⬇️⬇️ ABOUT ⬇️⬇️⬇️ */
+
+.about {
+  margin: 0;
+  width: 100%;
+  height: 200%;
+}
+
+/* ⬆️⬆️⬆️ ABOUT ⬆️⬆️⬆️ */
+
+/* ⬇️⬇️⬇️ CONTACT ⬇️⬇️⬇️ */
+
+.about {
+
+}
+
+/* ⬆️⬆️⬆️ CONTACT ⬆️⬆️⬆️ */
+
+/* ⬇️⬇️⬇️ PORTFOLIO ⬇️⬇️⬇️ */
+
+.portfolio-title {
+  color: #F4FCFE;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 30px;
+  margin-bottom: 70px;
+  margin-top: -10px;
+}
+
+.portfolio-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+
+.portifolio-project {
+  background-color: #3D3A50;
+  margin-bottom: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 28px 3px #131212;
+  transition: 150ms;
+}
+
+.portifolio-project:hover
+{
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.portifolio-project-name{
+  color: #F4FCFE;
+  font-family: 'Michroma', sans-serif;
+  font-size: 20px;
+}
+
+.portifolio-project-image {
+  width: 600px;
+  height: 350px;
+  border: 1px solid #303041;
+  border-radius: 5px;
+}
+
+.portifolio-project-button {
+
+}
+
+/* 👇 link da personalização do botão: https://cssbuttons.app/buttons/18 */ 
+
+.bn632-hover {
+  width: 160px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #303041;
+  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:hover {
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+  outline: none;
+}
+
+.bn632-hover.bn18 {
+    background-image: linear-gradient(
+      to right,
+      #25aae1,
+      #40e495,
+      #30dd8a,
+      #2bb673
+    );
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+/* 👆 link da personalização do botão: https://cssbuttons.app/buttons/19 */ 
+
+/* ⬆️⬆️⬆️ PORTFOLIO ⬆️⬆️⬆️ */
+
+/* ⬇️⬇️⬇️ SERVICES ⬇️⬇️⬇️ */
+
+.about {
+
+}
+
+/* ⬆️⬆️⬆️ SERVICES ⬆️⬆️⬆️ */
+
+/* ⬇️⬇️⬇️ SKILLS ⬇️⬇️⬇️ */
+
+.about {
+
+}
+
+/* ⬆️⬆️⬆️ SKILLS ⬆️⬆️⬆️ */
+
+/* ⬇️⬇️⬇️ FOOTER ⬇️⬇️⬇️ */
+
+.footer-background {
+  bottom: 0;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border-top: 1px solid rgba(114, 114, 126, 0.2);
+  width: 100%;
+  color: #F4FCFE;
+  height: 100px;
+}
+
+.footer-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  border-right: 1px solid rgba(114, 114, 126, 0.2);
+}
+
+.footer-social-networks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.footer-social-networks-icon {
+  width: 35px;
+  margin: 10px;
+  border-radius: 11px;
+}
+
+.footer-social-networks-icon:hover {
+  transition: 150ms;
+  box-shadow: 0px 0px 18px 1px #67ddf8;
+}
+
+/* ⬆️⬆️⬆️ FOOTER ⬆️⬆️⬆️ */
