@@ -1,7 +1,6 @@
 import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
@@ -10,11 +9,15 @@ import Skills from './pages/Skills';
 
 function App() {
   return (
-      <div>
-        <Header/>
-        <Portfolio />
-        <Footer />
-      </div>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Routes>
+          <Route exact path="/" element={ <About /> } />
+          <Route exact path="/contato" element={ <Contact /> } />
+          <Route exact path="/portfolio" element={ <Portfolio /> } />
+          <Route exact path="/servicos" element={ <Services /> } />
+          <Route exact path="/conhecimentos" element={ <Skills /> } />
+        </Routes>
+      </BrowserRouter>
   );
 }
 

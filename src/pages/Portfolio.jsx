@@ -1,10 +1,13 @@
 import React from 'react'
 import projects from '../data/Projects'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default function Portfolio() {
   console.log(projects)
   return (
     <div>
+      <Header />
       <h2 className="portfolio-title fadeIn">Projetos desenvolvidos</h2>
       <div className="portfolio-container fadeIn">
       {
@@ -26,6 +29,7 @@ export default function Portfolio() {
         })
       }
       </div>
+      <Footer />
     </div>
   )
 }
