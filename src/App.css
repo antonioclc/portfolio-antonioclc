@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #303041;
+  background-color: #252C33;
   text-align: center;
 }
 
@@ -155,7 +155,7 @@ font-family: 'Michroma', sans-serif;
 }
 
 .portifolio-project {
-  background-color: #3D3A50;
+  background-color: #3A4750;
   margin-bottom: 50px;
   padding: 5px;
   border-radius: 10px;
