@@ -6,7 +6,7 @@ import whatsapp from '../images/whatsapp.png'
 
 export default function Footer() {
   return (
-    <div className="footer-background fadeIn">
+    <div className="footer-background">
       <div className="footer-description">
         <h3>Desenvolvido por Antônio Campos, utilizando a biblioteca React</h3>
         <img src={logo} className="App-logo" alt="logo" />

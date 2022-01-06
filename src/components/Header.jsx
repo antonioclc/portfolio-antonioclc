@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
-    <div className="header-background fadeIn">
+    <div className="header-background">
       <h1 className="header-my-name">{`< Antônio Campos >`}</h1>
       <nav className="header-nav">
         <Link to="/" className="header-nav-link">Sobre mim</Link>
