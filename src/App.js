@@ -11,7 +11,7 @@ function App() {
   return (
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={ <About /> } />
+          <Route exact path="/portfolio-antonioclc" element={ <About /> } />
           <Route exact path="/contato" element={ <Contact /> } />
           <Route exact path="/portfolio" element={ <Portfolio /> } />
           <Route exact path="/servicos" element={ <Services /> } />
