@@ -1,581 +1,285 @@
+body {
+  margin: 0;
+  padding-top: 6%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #303041;
+  text-align: center;
+}
+
+body::-webkit-scrollbar {
+  width: 10px
+} 
+
+body::-webkit-scrollbar-thumb {   
+background-color: #e9f1f4;   
+}
+
+.fadeIn {
+  animation: fadeIn 0.3s linear;
+}
+@keyframes fadeIn {
+  from{ opacity: 0;
+  }
+  to{ opacity: 1; 
+  }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 
-* {
-  margin: 0px;
-  padding: 0px;
-  color: #e0bc2c;
-}
+/* 
+font-family: 'Raleway', sans-serif;
+font-family: 'Fredoka One', cursive;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Michroma', sans-serif;
+*/
 
-body {
-  background-image: url(./images/mustafar-tall.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.logo {
-  margin-top:15px;
-  width: 250px;
-  height: 125px;
-}
-
-.title {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-  margin-bottom: 20px;
-  width: 600px;
-  height: 40px;
-  font-family: 'Raleway', sans-serif;
-  border-radius: 10px;
-
-  background-image: linear-gradient(
-    to bottom right,
-    #16161600 0%, #3b3b3b 20%, #797979 60%, #8f8b8b00 100%
-  );
-
-  background-size: 200% 200%;
-  animation: moveGradient 5s linear infinite alternate;
-}
-
-@keyframes moveGradient {
-  from { background-position: 0 0; }
-  to { background-position: 100% 100% }
-}
-
-.title-table {
-  font-family: 'Fredoka One', cursive;
-  font-size: 18px;
-}
-
-.table-container {
-  width: 98%;
-  margin-left: 1%;
-}
-
-.table-container2 {
-  background-image: linear-gradient(
-    to bottom right,
-    #16161600 0%, #3b3b3b 20%, #797979 60%, #8f8b8b00 100%
-  );
-
-  background-size: 200% 200%;
-  animation: moveGradient 5s linear infinite alternate;
-  animation: opacidade 1s normal linear alternate;
-
-}
-
-.title-table-item {
-  margin-bottom: 500px;
-  background-color: #deb656;
-  color: #2f2f2f;
-}
-
-.line-table-item {
-  text-align: center;
-}
-
-.filters {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15px;
-}
-
-.filtersOptions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-  width: 100%;
-  height: 100px;
-
-  background-image: linear-gradient(
-    to bottom right,
-    #16161600 0%, #3b3b3b 20%, #797979 60%, #8f8b8b00 100%
-  );
-
-  background-size: 200% 200%;
-  animation: moveGradient 5s linear infinite alternate;
-}
-
-.filtersOptions-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 70px;
-  padding-right: 50px;
-}
-
-.filtersOptions-1-item {
-  margin: 20px;
-}
-
-.filtersOptions-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.filtersList {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.filter-in-use {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 20px 30px 20px;
-  border-radius: 10px;
-  padding-right: 5px;
-
-  background-image: linear-gradient(
-    to bottom right,
-    #16161694 0%, #3b3b3b 20%, #797979 60%, #8f8b8b85 100%
-  );
-
-  background-size: 200% 200%;
-  animation: moveGradient 5s linear infinite alternate;
-}
-
-.filter-in-use-description {
-  font-family: 'Fredoka One', cursive;
-  color: #deb656;
-  font-size: 18px;
-  margin: 15px;
-}
-
-.input-number {
-  width: 180px;
-  border: 0;
-  font-family: 'Fredoka One', cursive;
-  border-bottom: 4px solid #dfb946;
-  outline: 0;
-  font-size: 1.3rem;
-  color: #fff;
-  padding: 7px 0;
-  background: transparent;
-}
-
-/*🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 Buttons (type radio) 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽*/
-
-.radio {
-  margin: 10px;
-  display: block;
-  cursor: pointer;
-}
-.radio input {
-  display: none;
-}
-.radio input + span {
-  font-family: 'Fredoka One', cursive;
-  font-size: 15px;
-  line-height: 22px;
-  height: 22px;
-  padding-left: 22px;
-  display: block;
-  position: relative;
-}
-.radio input + span:not(:empty) {
-  padding-left: 30px;
-}
-.radio input + span:before, .radio input + span:after {
-  content: "";
-  width: 22px;
-  height: 22px;
-  display: block;
-  border-radius: 50%;
-  left: 0;
-  top: 0;
-  position: absolute;
-}
-.radio input + span:before {
-  background: #D1D7E3;
-  transition: background 0.2s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
-}
-.radio input + span:after {
-  background: #fff;
-  transform: scale(0.78);
-  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4);
-}
-.radio input:checked + span:before {
-  transform: scale(1.04);
-  background: #dacc11;
-}
-.radio input:checked + span:after {
-  transform: scale(0.4);
-  transition: transform 0.3s ease;
-}
-.radio:hover input + span:before {
-  transform: scale(0.92);
-}
-.radio:hover input + span:after {
-  transform: scale(0.74);
-}
-.radio:hover input:checked + span:after {
-  transform: scale(0.4);
-}
-
-/*🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼 Buttons (type radio) 🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼*/
-
-/*🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 Dropdown (tag <select>) 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽*/
-
-.custom-select {
-  position: relative;
-  display: block;
-  max-width: 400px;
-  min-width: 180px;
-  margin: 0 auto;
-  border: 1px solid #6e591a;
-  background-color: #dfb946;
-  z-index: 10;
-  border-radius: 12px;
-  margin: 10px;
-}
-.custom-select select {
-  border: none;
-  outline: none;
-  background: transparent;
-  -webkit-appearance: none;
-  font-family: 'Fredoka One', cursive;
-
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0;
-  margin: 0;
-  display: block;
-  width: 100%;
-  padding: 12px 55px 15px 15px;
-  font-size: 16px;
-  color: #2f2f2f;
-}
-.custom-select:after {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 50px;
-  height: 100%;
-  line-height: 38px;
-  content: "∨";
-  text-align: center;
-  color: #2f2f2f;
-  font-size: 24px;
-  border-left: 1px solid #6b5618;
-  z-index: -1;
-}
-
-/*🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼 Dropdown (tag <select>) 🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼*/
-
-/*🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 Filtro Por Nome 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽*/
-
-.form__group {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 27px 0 0;
-  width: 10%;
-  height: 50px;
-  margin-top: -15px;
-  margin-bottom: 25px;
-  border-radius: 20px 20px 0px 0px;
-
-  background-image: linear-gradient(
-    to bottom right,
-    #16161600 0%, #3b3b3b 20%, #797979 60%, #8f8b8b00 100%
-  );
-
-  background-size: 200% 200%;
-  animation: moveGradient 5s linear infinite alternate;
-}
-
-.form__field {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  font-family: inherit;
-  width: 100%;
-  border: 0;
-  border-bottom: 4px solid #dfb946;
-  outline: 0;
-  font-family: 'Fredoka One', cursive;
-  font-size: 1.8rem;
-  color: #fff;
-  padding: 7px 0;
-  background: transparent;
-  transition: border-color 0.2s;
-}
-.form__field::placeholder {
-  color: transparent;
-}
-.form__field:placeholder-shown ~ .form__label {
-  font-size: 1.3rem;
-  cursor: text;
-  top: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-}
-
-.form__label {
-  position: absolute;
-  top: 0;
-  font-family: 'Fredoka One', cursive;
-  transition: 0.2s;
-  font-size: 1rem;
-  color: #dfb946;
-}
-
-.form__field:focus {
-  padding-bottom: 6px;
-  border-width: 4px;
-  border-image: linear-gradient(to right, #dfb946, #dfb946);
-  border-image-slice: 1;
-}
-.form__field:focus ~ .form__label {
-  position: absolute;
-  top: 0;
-  display: block;
-  transition: 0.3s;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  padding: 4px;
-  font-family: 'Fredoka One', cursive;
-  color: #2f2f2f;
-  font-weight: 700;
-  background-color: #dfb946;
-  border-radius: 10px;
-}
-
-/*🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼 Filtro Por Nome 🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼*/
-
-/*🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽 Buttons (type button) 🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽🔽*/
-
-button {
-  position: relative;
-  border: none;
-  background: transparent;
-  padding: 0;
-  cursor: pointer;
-  outline-offset: 4px;
-  transition: filter 250ms;
-  user-select: none;
-  touch-action: manipulation;
- }
- 
- .shadow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  background: hsl(0deg 0% 0% / 0.25);
-  will-change: transform;
-  transform: translateY(2px);
-  transition: transform
-     600ms
-     cubic-bezier(.3, .7, .4, 1);
- }
-
- .shadow-X {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  background: hsl(0deg 0% 0% / 0.25);
-  will-change: transform;
-  transform: translateY(2px);
-  transition: transform
-     600ms
-     cubic-bezier(.3, .7, .4, 1);
- }
- 
- .edge {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  background: linear-gradient(
-     to left,
-     #796205 0%,
-     #665204 8%,
-     #493b04 92%,
-     #b49103 100%
-   );
- }
-
- .edge-X {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  background: linear-gradient(
-     to left,
-     hsl(340deg 100% 16%) 0%,
-     hsl(340deg 100% 32%) 8%,
-     hsl(340deg 100% 32%) 92%,
-     hsl(340deg 100% 16%) 100%
-   );
- }
- 
- .front {
-  display: block;
-  position: relative;
-  padding: 12px 27px;
-  border-radius: 12px;
-  font-size: 1.1rem;
-  font-family: 'Fredoka One', cursive;
-  font-weight: 900;
-  letter-spacing: 3px;
-  color: rgb(47, 47, 47);
-  background: #e0bc2c;
-  will-change: transform;
-  transform: translateY(-4px);
-  transition: transform
-     600ms
-     cubic-bezier(.3, .7, .4, 1);
- }
-
- .front-X {
-  display: block;
-  position: relative;
-  padding: 6px 13px;
-  border-radius: 12px;
-  font-size: 1.1rem;
-  font-family: 'Fredoka One', cursive;
-  font-weight: 900;
-  letter-spacing: 3px;
-  color: rgb(228, 225, 225);
-  background: hsl(345deg 100% 47%);
-  will-change: transform;
-  transform: translateY(-4px);
-  transition: transform
-     600ms
-     cubic-bezier(.3, .7, .4, 1);
- }
- 
- button:hover {
-  filter: brightness(110%);
- }
- 
- button:hover .front {
-  transform: translateY(-6px);
-  transition: transform
-     250ms
-     cubic-bezier(.3, .7, .4, 1.5);
- }
- 
- button:active .front {
-  transform: translateY(-2px);
-  transition: transform 34ms;
- }
- 
- button:hover .shadow {
-  transform: translateY(4px);
-  transition: transform
-     250ms
-     cubic-bezier(.3, .7, .4, 1.5);
- }
- 
- button:active .shadow {
-  transform: translateY(1px);
-  transition: transform 34ms;
- }
-
- button:hover .front-X {
-  transform: translateY(-6px);
-  transition: transform
-     250ms
-     cubic-bezier(.3, .7, .4, 1.5);
- }
- 
- button:active .front-X {
-  transform: translateY(-2px);
-  transition: transform 34ms;
- }
- 
- button:hover .shadow-X {
-  transform: translateY(4px);
-  transition: transform
-     250ms
-     cubic-bezier(.3, .7, .4, 1.5);
- }
- 
- button:active .shadow-X {
-  transform: translateY(1px);
-  transition: transform 34ms;
- }
-
-/*🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼 Buttons (type button) 🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼🔼*/
-
-.App {
-  text-align: center;
-}
+/* ⬇️⬇️⬇️ LOGO REACT ⬇️⬇️⬇️ */
 
 .App-logo {
-  height: 40vmin;
+  height: 40px;
   pointer-events: none;
 }
 
-@media ( prefers-reduced-motion : no-preference ) {
-
+@media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 200s reverse;
+    animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  align-items: center;
-  background-color: #282c34;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
-  justify-content: center;
-  min-height: 100vh;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }
 }
 
-@keyframes opacidade {
+/* ⬆️⬆️⬆️ LOGO REACT ⬆️⬆️⬆️ */
 
-  from {
-    opacity: 0.5;
-  }
+/* ⬇️⬇️⬇️ HEADER ⬇️⬇️⬇️ */
 
-  to {
-    opacity: 1;
-  }
+.header-background {
+  top: 0;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  position: fixed;
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(114, 114, 126, 0.2);
+  width: 100%;
+  height: 70px;
+  z-index: 1;
 }
 
+.header-my-name {
+  width: 40%;
+  font-family: 'Michroma', sans-serif;
+  font-size: 28px;
+  color: #F4FCFE;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+}
+
+.header-nav-link {
+  width: 150px;
+  font-family: 'Michroma', sans-serif;  color: #F4FCFE;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Fredoka One', cursive;
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header-nav-link:hover {
+  font-weight:bold;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(20deg, #25aae1,#40e495,#2bb673) 1;
+}
+
+/* ⬆️⬆️⬆️ HEADER ⬆️⬆️⬆️ */
+
+/* ⬇️⬇️⬇️ ABOUT ⬇️⬇️⬇️ */
+
+.about {
+  margin: 0;
+  width: 100%;
+  height: 200%;
+}
+
+/* ⬆️⬆️⬆️ ABOUT ⬆️⬆️⬆️ */
+
+/* ⬇️⬇️⬇️ CONTACT ⬇️⬇️⬇️ */
+
+.about {
+
+}
+
+/* ⬆️⬆️⬆️ CONTACT ⬆️⬆️⬆️ */
+
+/* ⬇️⬇️⬇️ PORTFOLIO ⬇️⬇️⬇️ */
+
+.portfolio-title {
+  color: #F4FCFE;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 30px;
+  margin-bottom: 70px;
+  margin-top: -10px;
+}
+
+.portfolio-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+
+.portifolio-project {
+  background-color: #3D3A50;
+  margin-bottom: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 28px 3px #131212;
+  transition: 150ms;
+}
+
+.portifolio-project:hover
+{
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.portifolio-project-name{
+  color: #F4FCFE;
+  font-family: 'Michroma', sans-serif;
+  font-size: 20px;
+}
+
+.portifolio-project-image {
+  width: 600px;
+  height: 350px;
+  border: 1px solid #303041;
+  border-radius: 5px;
+}
+
+.portifolio-project-button {
+
+}
+
+/* 👇 link da personalização do botão: https://cssbuttons.app/buttons/18 */ 
+
+.bn632-hover {
+  width: 160px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #303041;
+  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:hover {
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+  outline: none;
+}
+
+.bn632-hover.bn18 {
+    background-image: linear-gradient(
+      to right,
+      #25aae1,
+      #40e495,
+      #30dd8a,
+      #2bb673
+    );
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+/* 👆 link da personalização do botão: https://cssbuttons.app/buttons/19 */ 
+
+/* ⬆️⬆️⬆️ PORTFOLIO ⬆️⬆️⬆️ */
+
+/* ⬇️⬇️⬇️ SERVICES ⬇️⬇️⬇️ */
+
+.about {
+
+}
+
+/* ⬆️⬆️⬆️ SERVICES ⬆️⬆️⬆️ */
+
+/* ⬇️⬇️⬇️ SKILLS ⬇️⬇️⬇️ */
+
+.about {
+
+}
+
+/* ⬆️⬆️⬆️ SKILLS ⬆️⬆️⬆️ */
+
+/* ⬇️⬇️⬇️ FOOTER ⬇️⬇️⬇️ */
+
+.footer-background {
+  bottom: 0;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border-top: 1px solid rgba(114, 114, 126, 0.2);
+  width: 100%;
+  color: #F4FCFE;
+  height: 100px;
+}
+
+.footer-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  border-right: 1px solid rgba(114, 114, 126, 0.2);
+}
+
+.footer-social-networks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.footer-social-networks-icon {
+  width: 35px;
+  margin: 10px;
+  border-radius: 11px;
+}
+
+.footer-social-networks-icon:hover {
+  transition: 150ms;
+  box-shadow: 0px 0px 18px 1px #67ddf8;
+}
+
+/* ⬆️⬆️⬆️ FOOTER ⬆️⬆️⬆️ */
