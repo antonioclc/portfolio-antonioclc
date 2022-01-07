@@ -12,7 +12,7 @@ export default function About() {
         <img className="about-my-photo" src={myPhoto} alt='about-img'/>
         <div className="about-description">
           <h2 className="about-description-title">Oi! Eu sou <strong>Antônio Campos </strong></h2>
-          <p className="about-description-text">Pernambucano, marido, pai de Dante ❤️, sou apaixonado por tecnologia e interações digitais que possam gerar impacto na vida das pessoas. Tenho pouco mais de 10 anos de experiência em indústrias de grande porte, sempre na área de manutenção 🛠️, e hoje estou colocando em prática minha transição de carreira para área de desenvolvimento Web junto com a <a className="about-description-text-trybe" href="https://www.betrybe.com/" target="_blank" rel="noreferrer">Trybe</a>, uma escola que ensina a programar, a aprender e a trabalhar.</p>
+          <p className="about-description-text">Pernambucano, marido, pai de Dante ❤️, sou apaixonado por tecnologia e interações digitais que possam gerar impacto na vida das pessoas. Tenho pouco mais de 10 anos de experiência em indústrias de grande porte, sempre na área de manutenção 🛠️, e hoje estou colocando em prática minha transição de carreira para área de desenvolvimento Web junto com a <a className="about-description-text-green" href="https://www.betrybe.com/" target="_blank" rel="noreferrer">Trybe</a>, uma escola que ensina a programar, a aprender e a trabalhar.</p>
         </div>
       </div>
       <div className="about-footer">
