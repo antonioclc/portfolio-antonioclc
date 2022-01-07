@@ -7,7 +7,9 @@ export default function Skills() {
     <div className="about">
       <Header />
       <h1>Skills</h1>
-      <Footer />
+      <div className="footer-pages">
+        <Footer />
+      </div>
     </div>
   )
 }

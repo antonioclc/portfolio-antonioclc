@@ -8,7 +8,7 @@ export default function Portfolio() {
   return (
     <div>
       <Header />
-      <h2 className="portfolio-title fadeIn">Projetos desenvolvidos</h2>
+      <h2 className="title-page fadeIn">Projetos desenvolvidos</h2>
       <div className="portfolio-container fadeIn">
       {
         projects.map((project) => {
@@ -30,7 +30,9 @@ export default function Portfolio() {
         })
       }
       </div>
-      <Footer />
+      <div className="footer-pages">
+        <Footer />
+      </div>
     </div>
   )
 }

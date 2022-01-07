@@ -7,7 +7,9 @@ export default function Services() {
     <div className="about">
       <Header />
       <h1>SERVIÇOS</h1>
-      <Footer />
+      <div className="footer-pages">
+        <Footer />
+      </div>
     </div>
   )
 }

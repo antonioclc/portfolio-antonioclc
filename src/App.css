@@ -53,6 +53,13 @@ font-family: 'Orbitron', sans-serif;
 font-family: 'Michroma', sans-serif;
 */
 
+.title-page {
+  color: #F4FCFE;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
 /* ⬇️⬇️⬇️ LOGO REACT ⬇️⬇️⬇️ */
 
 .App-logo {
@@ -130,8 +137,66 @@ font-family: 'Michroma', sans-serif;
 
 /* ⬇️⬇️⬇️ ABOUT ⬇️⬇️⬇️ */
 
-.about {
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 70px;
+  width: 100%;
+  height: 100%;
+}
 
+.about-my-photo {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #ffffff25;
+  border-radius: 500px;
+  margin-right: 100px;
+}
+
+.about-description {
+  width: 700px;
+  border-bottom: 1px solid;
+  border-top: 2px solid;
+  border-image: linear-gradient(20deg, #25aae1,#40e495,#2bb673) 1;
+}
+
+.about-description-title {
+  color: #F4FCFE;
+  font-size: 40px;
+  font-family: 'Michroma', sans-serif;
+  margin-bottom: 50px;
+}
+
+.about-description-text {
+  color: #F4FCFE;
+  font-size: 18px;
+  text-align: center;
+  line-height: 28px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.about-description-text-trybe {
+  color: #3ac38e;
+  font-weight: bold;
+  text-decoration: none;
+  border: transparent;
+}
+
+.about-footer {
+  bottom: 0;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  position: fixed;
+  backdrop-filter: blur(15px);
+  border-bottom: 2px solid rgba(114, 114, 126, 0.2);
+  box-shadow: 0px 0px 8px 2px #131212;
+
+  width: 100%;
+  height: 70px;
+  z-index: 1;
 }
 
 /* ⬆️⬆️⬆️ ABOUT ⬆️⬆️⬆️ */
@@ -152,14 +217,7 @@ font-family: 'Michroma', sans-serif;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 25x;
-}
-
-.portfolio-title {
-  color: #F4FCFE;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 30px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 .portifolio-project {
@@ -175,14 +233,13 @@ font-family: 'Michroma', sans-serif;
   transition: 150ms;
 }
 
-.portifolio-project:hover
-{
+.portifolio-project:hover {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
 }
 
-.portifolio-project-name{
+.portifolio-project-name {
   color: #F4FCFE;
   font-family: 'Michroma', sans-serif;
   font-size: 20px;
@@ -195,11 +252,12 @@ font-family: 'Michroma', sans-serif;
   border-radius: 5px;
 }
 
-.portifolio-project-description{
+.portifolio-project-description {
   display: flex;
   justify-content:center;
   align-items:center;
-  width: 380px;
+  line-height: 20px;
+  width: 360px;
   height: 120px;
   color: #F4FCFE;
   text-align: justify;
@@ -208,8 +266,15 @@ font-family: 'Michroma', sans-serif;
   border-image: linear-gradient(20deg, #25aae1,#40e495,#2bb673) 1;
 }
 
-.portifolio-project-button {
-
+.footer-pages {
+  bottom: 0;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  border-top: 2px solid rgba(114, 114, 126, 0.2);
+  box-shadow: 0px 0px 8px 2px #131212;
+  width: 100%;
+  height: 70px;
 }
 
 /* 👇 link da personalização do botão: https://cssbuttons.app/buttons/18 */ 

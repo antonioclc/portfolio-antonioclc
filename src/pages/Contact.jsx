@@ -7,7 +7,9 @@ export default function Contact() {
     <div className="about">
       <Header />
       <h1>CONTATO</h1>
-      <Footer />
+      <div className="footer-pages">
+        <Footer />
+      </div>
     </div>
   )
 }
