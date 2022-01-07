@@ -54,10 +54,24 @@ font-family: 'Michroma', sans-serif;
 */
 
 .title-page {
+  display: flex;
+  justify-content:center;
+  align-items:center;
   color: #F4FCFE;
   font-family: 'Orbitron', sans-serif;
   font-size: 30px;
+  width:90%;
+  padding: 10px;
   margin-bottom: 25px;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(20deg, #25aae1,#40e495,#2bb673) 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ⬇️⬇️⬇️ LOGO REACT ⬇️⬇️⬇️ */
@@ -144,7 +158,9 @@ font-family: 'Michroma', sans-serif;
   margin-top: 120px;
   margin-bottom: 70px;
   width: 100%;
-  height: 100%;
+  height: 400px;
+  background-color: #3A4750;
+  box-shadow: 0px 0px 28px 10px #131212;
 }
 
 .about-my-photo {
@@ -154,6 +170,8 @@ font-family: 'Michroma', sans-serif;
   border-radius: 500px;
   margin-right: 100px;
 }
+
+
 
 .about-description {
   width: 700px;
@@ -387,11 +405,12 @@ font-family: 'Michroma', sans-serif;
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-  border-image: linear-gradient(20deg, #25aae1,#40e495,#2bb673) 1;
+  padding: 20px;
   width: 60%;
-  height: 100%;
+  height: 300px;
+  background-color: #3A4750;
+  border-radius: 10px;
+  box-shadow: 0px 0px 28px 3px #131212;
 }
 
 .skills-description-image {
@@ -416,7 +435,8 @@ font-family: 'Michroma', sans-serif;
   font-size: 18px;
   text-align: center;
   line-height: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: justify;
 }
 
 .skills-description-text a {
@@ -472,6 +492,12 @@ font-family: 'Michroma', sans-serif;
   align-items: center;
   padding-right: 10px;
   border-right: 1px solid rgba(114, 114, 126, 0.2);
+}
+
+.footer-description p {
+  display: inline-block;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
 }
 
 .footer-social-networks {

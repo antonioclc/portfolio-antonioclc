@@ -10,7 +10,7 @@ export default function Header() {
         <Link to="/portfolio" className="header-nav-link">Portfolio</Link>
         {/* <Link to="/servicos" className="header-nav-link">Serviços</Link> */}
         <Link to="/conhecimentos" className="header-nav-link">Habilidades</Link>
-        <Link to="/contato" className="header-nav-link">Contato</Link>
+        {/* <Link to="/contato" className="header-nav-link">Contato</Link> */}
       </nav>
     </div>
   )

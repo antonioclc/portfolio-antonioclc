@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <div className="footer-background">
       <div className="footer-description">
-        <h3>Desenvolvido por Antônio Campos, utilizando a biblioteca React</h3>
+        <p>Desenvolvido por <p className="about-description-text-green">{`Antônio Campos`}</p>, utilizando a biblioteca React</p>
         <img src={logo} className="App-logo" alt="logo" />
       </div>
       <div className="footer-social-networks">

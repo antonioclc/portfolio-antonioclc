@@ -4,10 +4,13 @@ import Footer from '../components/Footer'
 
 export default function Contact() {
   return (
-    <div className="about">
+    <div>
       <Header />
-      <h1>CONTATO</h1>
-      <div className="footer-pages">
+      <div className="container">
+        <h2 className="title-page fadeIn">Contato</h2>
+
+      </div>
+      <div className="about-footer">
         <Footer />
       </div>
     </div>

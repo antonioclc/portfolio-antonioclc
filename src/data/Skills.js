@@ -17,7 +17,7 @@ const skillsDescription = [
       image: css,
       description: 'CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma linguagem de estilo (en-US) usada para descrever a apresentação de um documento escrito em HTML ou em XML (incluindo várias linguagens em XML como SVG, MathML ou XHTML). O CSS descreve como elementos são mostrados na tela, no papel, na fala ou em outras mídias.',
       font: 'https://developer.mozilla.org/pt-BR/docs/Web/CSS',
-      myDescription:'Cuida da estilização da página, de como de fato o usuário vai visualizar a página e interagir com ela, se fosse comparar a um corpo humano, seria toda nossa camada externa, o nosso visual mesmo.'
+      myDescription:'Cuida da estilização da página, de como de fato o usuário vai visualizar a página e interagir com ela, se fosse comparar a um corpo humano, seria toda nossa camada externa, o nosso visual.'
     },
     {
       title: 'JavaScript',
@@ -31,14 +31,14 @@ const skillsDescription = [
       image: react,
       description: 'React faz com que a criação de UIs interativas seja uma tarefa fácil. Crie views simples para cada estado na sua aplicação, e o React irá atualizar e renderizar de forma eficiente apenas os componentes necessários na medida em que os dados mudam. Views declarativas fazem com que seu código seja mais previsível e simples de depurar.',
       font: 'https://pt-br.reactjs.org/',
-      myDescription:'É a biblioteca que facilita na criação das nossas aplicações, possibilitando a componentização dos elementos que as englobam (e também sua reutilação). É como se conseguíssimos fazer um quebra-cabeça do nosso projeto, onde sua compreensão e manutenção ficam muito mais fáceis de serem executadas'
+      myDescription:'É a biblioteca que facilita na criação das nossas aplicações, possibilitando a componentização dos elementos que as englobam(e também sua reutilação). É como se conseguíssimos fazer um quebra-cabeça do nosso projeto, onde sua compreensão e manutenção ficam muito mais fáceis de serem executadas.'
     },
     {
       title: 'Redux',
       image: redux,
       description: 'O Redux ajuda você a escrever aplicativos que se comportam de maneira consistente , são executados em ambientes diferentes (cliente, servidor e nativo) e são fáceis de testar. Centraliza o estado e a lógica do seu aplicativo permitindo recursos poderosos como desfazer / refazer , persistência de estado e muito mais.',
       font: 'https://redux.js.org/',
-      myDescription:'É uma biblioteca Javascript que permite o gerenciamento de estado da aplicação de forma consistente, centralizando as informações necessárias para controlar todas as tarefas programadas durante o uso do aplicativo'
+      myDescription:'É uma biblioteca Javascript que permite o gerenciamento de estado da aplicação de forma consistente, centralizando as informações necessárias para controlar todas as tarefas programadas durante o uso do aplicativo.'
     },
 
   ];

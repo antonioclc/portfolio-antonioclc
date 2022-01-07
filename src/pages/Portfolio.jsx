@@ -7,27 +7,29 @@ export default function Portfolio() {
   return (
     <div>
       <Header />
-      <h2 className="title-page fadeIn">Projetos desenvolvidos</h2>
-      <div className="portfolio-container fadeIn">
-      {
-        projects.map((project) => {
-          return(
-            <div className="portifolio-project grow">
-              <h4 className="portifolio-project-name">{project.name}</h4>
-              <img src={project.printScreen} alt={project.name} className="portifolio-project-image"/>
-              <p className="portifolio-project-description">{project.description}</p>
-              <div>
-                <a href={project.urlPage} target="_blank" rel="noreferrer">
-                <button className="bn632-hover bn18">Site</button>
-                </a>
-                <a href={project.urlCode} target="_blank" rel="noreferrer">
-                <button className="bn632-hover bn18">Código</button>
-                </a>
+      <div className="container">
+        <h2 className="title-page fadeIn">Projetos desenvolvidos</h2>
+        <div className="portfolio-container fadeIn">
+        {
+          projects.map((project) => {
+            return(
+              <div className="portifolio-project grow">
+                <h4 className="portifolio-project-name">{project.name}</h4>
+                <img src={project.printScreen} alt={project.name} className="portifolio-project-image"/>
+                <p className="portifolio-project-description">{project.description}</p>
+                <div>
+                  <a href={project.urlPage} target="_blank" rel="noreferrer">
+                  <button className="bn632-hover bn18">Site</button>
+                  </a>
+                  <a href={project.urlCode} target="_blank" rel="noreferrer">
+                  <button className="bn632-hover bn18">Código</button>
+                  </a>
+                </div>
               </div>
-            </div>
-          )
-        })
-      }
+            )
+          })
+        }
+        </div>
       </div>
       <div className="footer-pages">
         <Footer />
