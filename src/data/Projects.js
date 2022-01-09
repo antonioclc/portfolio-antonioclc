@@ -1,5 +1,6 @@
 import StarWarsPlanetSearch from '../images/screencapture-starwars-planet-seacrh.png'
 import FrontendOnlineStore from '../images/frontend-online-store.png'
+import Trivia from '../images/trivia-login.png'
 
 const projects = [
   {
@@ -15,6 +16,13 @@ const projects = [
     urlPage: 'https://antonioclc.github.io/frontend-online-store/',
     urlCode: 'https://github.com/antonioclc/frontend-online-store',
     printScreen: FrontendOnlineStore,
+  },
+  {
+    name: 'Trivia',
+    description:'Este game testa seus conhecimentos gerais, com 5 perguntas e 3 níveis de dificuldade, ao final, você verá sua pontuação e o ranking dos usuários que jogaram. Vamos jogar!',
+    urlPage: 'https://antonioclc.github.io/trivia-react-redux/',
+    urlCode: 'https://github.com/antonioclc/trivia-react-redux',
+    printScreen: Trivia,
   },
 ];
 
