@@ -19,7 +19,7 @@ export default function Portfolio() {
                 <p className="portifolio-project-description">{project.description}</p>
                 <div>
                   <a href={project.urlPage} target="_blank" rel="noreferrer">
-                  <button className="bn632-hover bn18">Site</button>
+                  <button className="bn632-hover bn18">Preview</button>
                   </a>
                   <a href={project.urlCode} target="_blank" rel="noreferrer">
                   <button className="bn632-hover bn18">Código</button>
