@@ -1,6 +1,7 @@
 import StarWarsPlanetSearch from '../images/screencapture-starwars-planet-seacrh.png'
 import FrontendOnlineStore from '../images/frontend-online-store.png'
 import Trivia from '../images/trivia-login.png'
+import MovieCardsLibrary from '../images/previw-movie-cards-library.png'
 
 const projects = [
   {
@@ -23,6 +24,13 @@ const projects = [
     urlPage: 'https://antonioclc.github.io/trivia-react-redux/',
     urlCode: 'https://github.com/antonioclc/trivia-react-redux',
     printScreen: Trivia,
+  },
+  {
+    name: 'Movie Cards Library',
+    description:'Este projeto foi desenvolvido para simular uma biblioteca composta por cards de filmes variados, com foto, título, subtítulo e uma breve descrição do filme.',
+    urlPage: 'https://antonioclc.github.io/movie-cards-library/',
+    urlCode: 'https://github.com/antonioclc/movie-cards-library',
+    printScreen: MovieCardsLibrary,
   },
 ];
 
