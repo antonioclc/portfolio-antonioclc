@@ -3,6 +3,7 @@ import html from '../images/icons8-html-5-240.png'
 import css from '../images/icons8-css3-240.png'
 import js from '../images/icons8-javascript-240.png'
 import redux from '../images/icons8-redux-240.png'
+import git from '../images/git-icon.png'
 
 const skillsDescription = [
     {
@@ -39,6 +40,13 @@ const skillsDescription = [
       description: 'O Redux ajuda você a escrever aplicativos que se comportam de maneira consistente , são executados em ambientes diferentes (cliente, servidor e nativo) e são fáceis de testar. Centraliza o estado e a lógica do seu aplicativo permitindo recursos poderosos como desfazer / refazer , persistência de estado e muito mais.',
       font: 'https://redux.js.org/',
       myDescription:'É uma biblioteca Javascript que permite o gerenciamento de estado da aplicação de forma consistente, centralizando as informações necessárias para controlar todas as tarefas programadas durante o uso do aplicativo.'
+    },
+    {
+      title: 'Git',
+      image: git,
+      description: 'Git é um sistema de controle de versão distribuído gratuito e de código aberto projetado para lidar com tudo, desde projetos pequenos a muito grandes com velocidade e eficiência.',
+      font: 'https://git-scm.com/',
+      myDescription:'Uma maravilhosa ferramente que nos auxilia no controle das verões dos nossos projetos, ou seja, durante o desenvolvimento ou manutenção, qualquer alteração feita ficará mapeada, tendo assim uma espécie de histórico de todas as mudanças, sem correr risco de perder informação.'
     },
 
   ];

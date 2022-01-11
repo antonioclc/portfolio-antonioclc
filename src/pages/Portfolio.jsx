@@ -17,7 +17,7 @@ export default function Portfolio() {
                 <h4 className="portifolio-project-name">{project.name}</h4>
                 <img src={project.printScreen} alt={project.name} className="portifolio-project-image"/>
                 <p className="portifolio-project-description">{project.description}</p>
-                <div>
+                <div className="portifolio-project-btn">
                   <a href={project.urlPage} target="_blank" rel="noreferrer">
                   <button className="bn632-hover bn18">Preview</button>
                   </a>

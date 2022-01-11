@@ -1,3 +1,16 @@
+  
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+   /* 
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Fredoka One', cursive;
+  font-family: 'Orbitron', sans-serif;
+  font-family: 'Michroma', sans-serif;
+  */
+
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
@@ -41,18 +54,6 @@
     to{ opacity: 1; 
     }
   }
-  
-  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;900&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
-  
-  /* 
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Fredoka One', cursive;
-  font-family: 'Orbitron', sans-serif;
-  font-family: 'Michroma', sans-serif;
-  */
   
   .title-page {
     display: flex;
@@ -369,6 +370,7 @@
   
   .skills-nav-icon {
     width: 50px;
+    padding: 3px;
     transition: 150ms;
   }
   
@@ -563,12 +565,11 @@
     align-items:center;
     color: #F4FCFE;
     font-family: 'Orbitron', sans-serif;
-    font-size: 30px;
-    width:90%;
+    font-size: 22px;
+    width:80%;
     padding: 10px;
-    margin-bottom: 25px;
-    border-bottom: 1px solid;
-    border-image: linear-gradient(20deg, #25aae1,#40e495,#2bb673) 1;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #ffffff25;
   }
   
   .container {
@@ -618,7 +619,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    width: 70%;
     height: 25px;
     font-family: 'Michroma', sans-serif;
     font-size: 20px;
@@ -640,7 +641,7 @@
     color: #F4FCFE;
     font-family: 'Orbitron', sans-serif;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 15px;
     border: transparent;
     font-weight:bold;
     border-right: 2px solid;
@@ -671,14 +672,15 @@
   }
   
   .about-description {
-    width: 80%;
+    width: 90%;
     margin-top: 30px;
     border-top: 2px solid #ffffff25;
   }
   
   .about-description-title {
     color: #F4FCFE;
-    font-size: 20px;
+    width: 100%;
+    font-size: 18px;
     font-family: 'Michroma', sans-serif;
     margin-bottom: 20px;
   }
@@ -726,7 +728,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
   
   .portifolio-project {
@@ -735,28 +737,20 @@
     justify-content: center;
     align-items: center;
     background-color: #3A4750;
-    margin: 35px;
-    padding: 5px;
+    width: 90%;
+    margin: 15px;
     border-radius: 10px;
     box-shadow: 0px 0px 28px 3px #131212;
-    transition: 150ms;
-  }
-  
-  .portifolio-project:hover {
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
   }
   
   .portifolio-project-name {
     color: #F4FCFE;
     font-family: 'Michroma', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
   }
   
   .portifolio-project-image {
-    width: 400px;
-    height: 250px;
+    width: 95%;
     border: 1px solid #303041;
     border-radius: 5px;
   }
@@ -765,14 +759,13 @@
     display: flex;
     justify-content:center;
     align-items:center;
-    line-height: 23px;
-    width: 360px;
-    height: 140px;
+    line-height: 18px;
+    font-size: 15px;
+    width: 95%;
     color: #F4FCFE;
     text-align: justify;
-    border-bottom: 1px solid;
-    border-top: 1px solid;
-    border-image: linear-gradient(20deg, #25aae1,#40e495,#2bb673) 1;
+    border-bottom: 2px solid #ffffff25;
+    border-top: 2px solid #ffffff25;
   }
   
   .footer-pages {
@@ -787,16 +780,22 @@
   }
   
   /* 👇 link da personalização do botão: https://cssbuttons.app/buttons/18 */ 
+
+  .portifolio-project-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   .bn632-hover {
-    width: 160px;
-    font-size: 18px;
+    width: 100px;
+    font-size: 16px;
     font-weight: 600;
     color: #303041;
     font-family: 'Orbitron', sans-serif;
     cursor: pointer;
-    margin: 20px;
-    height: 55px;
+    margin: 5px 20px 20px 20px;
+    height: 40px;
     text-align:center;
     border: none;
     background-size: 300% 100%;
@@ -805,18 +804,7 @@
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
   }
-  
-  .bn632-hover:hover {
-    background-position: 100% 0;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-  }
-  
-  .bn632-hover:focus {
-    outline: none;
-  }
-  
+
   .bn632-hover.bn18 {
       background-image: linear-gradient(
         to right,
@@ -858,7 +846,7 @@
   }
   
   .skills-nav-icon {
-    width: 50px;
+    width: 40px;
     transition: 150ms;
   }
   
@@ -881,36 +869,26 @@
     cursor: pointer;
   }
   
-  .react:hover {
-    background-image: linear-gradient(
-      to right,
-      #FF512F,
-      #F09819,
-      #F09819,
-      #FF512F
-    );
-  }
-  
   .skills-description {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
     padding: 20px;
-    width: 60%;
-    height: 300px;
+    width: 90%;
     background-color: #3A4750;
     border-radius: 10px;
     box-shadow: 0px 0px 28px 3px #131212;
   }
   
   .skills-description-image {
-    width: 25%;
-    margin-right: 30px;
+    width: 1px;
+    visibility: hidden;
   }
   
   .skills-description-text {
-    width: 75%;
+    width: 100%;
     color: #F4FCFE;
   }
   
@@ -918,12 +896,12 @@
     color: #F4FCFE;
     font-size: 20px;
     font-family: 'Michroma', sans-serif;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   
   .skills-description-text p {
     color: #F4FCFE;
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
     line-height: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -938,7 +916,7 @@
   
   .skills-description-text h4 {
     color: #3ac38e;
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
     line-height: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

@@ -6,6 +6,7 @@ import html from '../images/icons8-html-5-240.png'
 import css from '../images/icons8-css3-240.png'
 import js from '../images/icons8-javascript-240.png'
 import redux from '../images/icons8-redux-240.png'
+import git from '../images/git-icon.png'
 import skillsDescription from '../data/Skills'
 
 export default function Skills() {
@@ -34,6 +35,9 @@ export default function Skills() {
             </button>
             <button className="skills-nav-btn" onMouseOver	={() => setSkillPosition(4)}>
               <img src={redux} alt="redux" className="skills-nav-icon" />
+            </button>
+            <button className="skills-nav-btn" onMouseOver	={() => setSkillPosition(5)}>
+              <img src={git} alt="git" className="skills-nav-icon" />
             </button>
           </div>
           <div className="skills-description">
