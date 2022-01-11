@@ -619,7 +619,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 75%;
     height: 25px;
     font-family: 'Michroma', sans-serif;
     font-size: 20px;
@@ -841,17 +841,16 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 20%;
     height: 100px;
   }
   
   .skills-nav-icon {
-    width: 40px;
+    width: 35px;
     transition: 150ms;
   }
   
   .skills-nav-icon:hover {
-    width: 60px;
+    width: 50px;
     background-image: linear-gradient(
       to right,
       #25aae1,
@@ -876,7 +875,7 @@
     align-items: center;
     margin-bottom: 100px;
     padding: 20px;
-    width: 90%;
+    width: 80%;
     background-color: #3A4750;
     border-radius: 10px;
     box-shadow: 0px 0px 28px 3px #131212;
