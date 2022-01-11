@@ -610,7 +610,7 @@
     justify-content:space-between;
     align-items: center;
     border-bottom: 2px solid rgba(114, 114, 126, 0.2);
-    box-shadow: 0px 0px 8px 2px #131212;
+    box-shadow: 0px 0px 2px 1px #131212;
     width: 100%;
   }
   
@@ -645,8 +645,8 @@
     font-weight:bold;
     border-right: 2px solid;
     border-left: 2px solid;
+    border-color: #d3dbdd;
     padding: 0px 8px 0px 8px;
-    border-image: linear-gradient(20deg, #25aae1,#40e495,#2bb673) 1;
   }
   
   /* ⬆️⬆️⬆️ HEADER ⬆️⬆️⬆️ */
@@ -673,9 +673,7 @@
   .about-description {
     width: 80%;
     margin-top: 30px;
-    border-bottom: 1px solid;
-    border-top: 2px solid;
-    border-image: linear-gradient(20deg, #25aae1,#40e495,#2bb673) 1;
+    border-top: 2px solid #ffffff25;
   }
   
   .about-description-title {
@@ -706,7 +704,7 @@
     align-items: center;
     backdrop-filter: blur(15px);
     border-bottom: 2px solid rgba(114, 114, 126, 0.2);
-    box-shadow: 0px 0px 8px 2px #131212;
+    box-shadow: 0px 0px 2px 1px #131212;
     width: 100%;
   }
   
