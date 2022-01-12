@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import myPhoto from '../images/minha-foto.jpg'
+import myPhoto from '../images/minha-foto.jpeg'
 
 
 export default function About() {
