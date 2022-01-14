@@ -173,11 +173,9 @@
     margin-right: 100px;
   }
   
-  
-  
   .about-description {
     width: 700px;
-    border-bottom: 1px solid;
+    border-bottom: 2px solid;
     border-top: 2px solid;
     border-image: linear-gradient(20deg, #25aae1,#40e495,#2bb673) 1;
   }
