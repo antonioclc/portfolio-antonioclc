@@ -8,6 +8,7 @@ export default function Footer() {
   return (
     <div className="footer-background">
       <div className="footer-description">
+        <img src={logo} className="App-logo" alt="logo" />
         <p>Desenvolvido por <p className="about-description-text-green">{`Antônio Campos`}</p></p>
         <img src={logo} className="App-logo" alt="logo" />
       </div>
