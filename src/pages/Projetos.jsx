@@ -3,12 +3,12 @@ import projects from '../data/Projects'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-export default function Portfolio() {
+export default function Projetos() {
   return (
     <div>
       <Header />
       <div className="container">
-        <h2 className="title-page fadeIn">Projetos desenvolvidos</h2>
+        <h2 className="title-page fadeIn">Projetos</h2>
         <div className="portfolio-container fadeIn">
         {
           projects.map((project) => {

@@ -11,8 +11,6 @@ import skillsDescription from '../data/Skills'
 
 export default function Skills() {
   const [skillsPosition, setSkillPosition] = useState(0)
-  console.log(skillsDescription)
-  console.log(skillsDescription[0].description)
   
   return (
     <div>
