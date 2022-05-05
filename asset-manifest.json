@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-antonioclc/static/css/main.4ae982f4.css",
-    "main.js": "/portfolio-antonioclc/static/js/main.2995572e.js",
+    "main.js": "/portfolio-antonioclc/static/js/main.ff954f8f.js",
     "static/media/screencapture-starwars-planet-seacrh.png": "/portfolio-antonioclc/static/media/screencapture-starwars-planet-seacrh.72c40f5a06cfe120b1de.png",
     "static/media/previw-movie-cards-library.png": "/portfolio-antonioclc/static/media/previw-movie-cards-library.3bc79565efa71c72b0fe.png",
     "static/media/frontend-online-store.png": "/portfolio-antonioclc/static/media/frontend-online-store.d7e156917ecb939fbc31.png",
@@ -16,10 +16,10 @@
     "static/media/logo.svg": "/portfolio-antonioclc/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portfolio-antonioclc/index.html",
     "main.4ae982f4.css.map": "/portfolio-antonioclc/static/css/main.4ae982f4.css.map",
-    "main.2995572e.js.map": "/portfolio-antonioclc/static/js/main.2995572e.js.map"
+    "main.ff954f8f.js.map": "/portfolio-antonioclc/static/js/main.ff954f8f.js.map"
   },
   "entrypoints": [
     "static/css/main.4ae982f4.css",
-    "static/js/main.2995572e.js"
+    "static/js/main.ff954f8f.js"
   ]
 }
