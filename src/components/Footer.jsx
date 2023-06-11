@@ -19,9 +19,9 @@ export default function Footer() {
         <a href="https://www.linkedin.com/in/ant%C3%B4nio-campos/" target="_blank" rel="noreferrer">
           <img src={linkedin} alt="linkedin" className="footer-social-networks-icon"/>
         </a>
-        <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5581997268325" target="_blank" rel="noreferrer">
-          <img src={whatsapp} alt="whatsapp" className="footer-social-networks-icon"/>
-        </a>
+//         <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5581997268325" target="_blank" rel="noreferrer">
+//           <img src={whatsapp} alt="whatsapp" className="footer-social-networks-icon"/>
+//         </a>
       </div>
     </div>
   )
